@@ -1,0 +1,19 @@
+# robots.txt for Blade Rush by Aditya Games
+
+User-agent: *
+Disallow: /privacy
+Disallow: /terms
+Disallow: /about
+Disallow: /settings
+Disallow: /score
+Disallow: /rush
+Disallow: /level
+Disallow: /shop
+Disallow: /play
+Disallow: /tournament
+Disallow: /help
+
+Allow: /
+
+# Sitemap (optional: if you generate one)
+# Sitemap: https://blade.adityagames.com/sitemap.xml

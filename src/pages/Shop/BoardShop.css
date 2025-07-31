@@ -1,0 +1,96 @@
+/* BoardShop.css */
+
+.board-shop {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #003366, #0077cc);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.board-shop h1 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #e3f2fd;
+}
+
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.board-option {
+  background: rgba(255, 255, 255, 0.06);
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.board-option:hover {
+  transform: translateY(-5px);
+  border-color: #a7e0ff;
+}
+
+.board-option.selected {
+  border-color: #4dd0e1;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px #4dd0e1;
+}
+
+.board-option canvas {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+
+.board-option p {
+  font-size: 1.1rem;
+  color: #e0f7fa;
+  margin: 0;
+  font-weight: 500;
+}
+
+.save-btn {
+  background-color: #ffffff;
+  color: #003366;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.save-btn:hover {
+  background-color: #d0f0ff;
+}
+
+.message {
+  margin-top: 20px;
+  background-color: rgba(0, 200, 120, 0.2);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #d4ffea;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.board-shop {
+  padding: 40px 20px 100px; /* Top, sides, ✅ bottom padding added */
+}

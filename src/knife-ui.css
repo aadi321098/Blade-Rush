@@ -1,0 +1,74 @@
+/* 🧾 knife-ui.css — clean modern UI for knife/apple and popups */
+
+#status-box {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(30, 30, 30, 0.7);
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 2px solid white;
+  display: flex;
+  gap: 16px;
+  z-index: 10;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-size: 18px;
+}
+
+.status-item img {
+  width: 24px;
+  height: 24px;
+}
+
+/* 🎉 popup styling */
+#popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1e1e1e;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 3px solid #00ff88;
+  text-align: center;
+  z-index: 100;
+}
+
+#popup h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+#popup button {
+  background: #00cc44;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#popup button:hover {
+  background: #00b33c;
+}
+
+#knife-container {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #05424C;
+  overflow: hidden;
+}

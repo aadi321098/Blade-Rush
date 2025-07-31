@@ -1,0 +1,138 @@
+/* KnifeSelect.css */
+
+.knife-select-page {
+  min-height: 100vh;
+  padding: 40px 20px 100px;
+  background: linear-gradient(135deg, #003366, #0077cc);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.knife-select-page h1 {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #e0f7fa;
+}
+
+/* Knife Grid */
+.knife-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.knife-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.knife-card:hover {
+  transform: translateY(-4px);
+  border-color: #4dd0e1;
+}
+
+.knife-card.selected {
+  border-color: #4dd0e1;
+  box-shadow: 0 0 20px #4dd0e1;
+}
+
+.knife-card img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.knife-card p {
+  font-size: 1rem;
+  color: #e3f2fd;
+  margin: 0;
+}
+
+/* Preview */
+.knife-preview {
+  margin-bottom: 30px;
+}
+
+.knife-preview h3 {
+  font-size: 1.3rem;
+  color: #e0ffff;
+  margin-bottom: 10px;
+}
+
+.knife-preview img {
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(0 0 8px #00e5ff);
+}
+
+/* Save Button */
+.save-button {
+  background-color: #ffffff;
+  color: #01579b;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.save-button:hover:not(:disabled) {
+  background-color: #d0f0ff;
+}
+
+.save-button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+
+.knife-card {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image wrapper to normalize size */
+.knife-img-wrapper {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.knife-img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Toast-style message like BoardShop */
+.knife-message {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #aaffaa;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid #4caf50;
+  padding: 10px 16px;
+  border-radius: 10px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}

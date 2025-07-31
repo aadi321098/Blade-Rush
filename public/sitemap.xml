@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://blade.adityagames.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://blade.adityagames.com/shop</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://blade.adityagames.com/shop/board</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://blade.adityagames.com/shop/knife</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://blade.adityagames.com/about</loc>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://blade.adityagames.com/privacy</loc>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://blade.adityagames.com/terms</loc>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://blade.adityagames.com/help</loc>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

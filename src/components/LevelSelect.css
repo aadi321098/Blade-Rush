@@ -1,0 +1,60 @@
+.level-select-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.level-card {
+  padding: 12px;
+  background: #eee;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+.level-card.unlocked {
+  background-color: #fffdf3;
+}
+
+.level-card.completed {
+  background-color: #c1f7c1;
+}
+
+.level-card.locked {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #666;
+}
+
+.tick {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  color: green;
+  font-size: 18px;
+}
+
+.lock {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-size: 18px;
+}
+
+.coming-soon-card {
+  grid-column: span 2;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: 2px dashed #bbb;
+  border-radius: 10px;
+  color: #666;
+}
