@@ -1,6 +1,6 @@
 // src/pages/PremiumPage.jsx
 import React, { useState, useEffect } from "react";
-import { API_BASE, APP_ID, SANDBOX } from "../config";
+import { API_BASE, APP_ID, } from "../config";
 import "./PremiumPage.css";
 import { useNavigate } from "react-router-dom";
 
@@ -30,7 +30,7 @@ const [paymentStatus, setPaymentStatus] = useState("");
   useEffect(() => {
     if (window.Pi) {
       try {
-        window.Pi.init({ version: "2.0", sandbox: SANDBOX, appId: APP_ID });
+        window.Pi.init({ version: "2.0", sandbox: false, appId: APP_ID });
         setPiReady(true);
       } catch (e) {
         setError("❌ Pi init failed. Check App ID & Allowed Origins.");
