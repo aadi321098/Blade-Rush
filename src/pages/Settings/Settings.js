@@ -23,9 +23,12 @@ function Settings() {
   const musicTimeoutRef = useRef(null);
 
 // ✅ User info from localStorage
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({ username: "", premium: false });
 
-  useEffect(() => {
+useEffect(() => {
+  const username = localStorage.getItem("username");
+  const premium = localStorage.getItem("premium") === "true";
+  setUser({ username: username || "", premium });
     musicRef.current = new Audio(tune);
     clickRef.current = new Audio(click);
 
@@ -171,3 +174,4 @@ function Settings() {
 }
 
 export default Settings;
+
