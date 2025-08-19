@@ -1,7 +1,8 @@
 // config.js
 export const API_BASE = "https://try2back.onrender.com"; 
-export const APP_ID   = "67eff0ae0199aac7a37cf903";
-export const SANDBOX  = true;
+
 
 // src/configScore.js
 export const SCORE_API = "http://localhost:6000";
+const APP_ID   = "688a40faa595d51f0e1d64ba";
+const SANDBOX  = false; // true for testnet, false for mainnet
