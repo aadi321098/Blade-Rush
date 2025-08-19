@@ -119,9 +119,10 @@ const [paymentStatus, setPaymentStatus] = useState("");
   setError("");
   setPaymentStatus("⏳ Processing payment...");
   try {
+    const username = localStorage.getItem("username") || "";
     const paymentData = {
       amount,
-      memo: "Premium 30 days",
+      memo: `Premium 30 days${username ? ` (${username})` : ""}`, // <-- yahan username bracket me
       metadata: { plan: "premium_30d" },
     };
 
