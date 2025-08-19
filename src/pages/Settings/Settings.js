@@ -108,13 +108,51 @@ useEffect(() => {
     <div className="settings-container">
       
 {/* 🔑 Dynamic Login / Premium Button */}
-      <div className="login-bar">
-        <button className="login-btn" onClick={() => goToPage("/premium")}>
-          {user 
-            ? `Welcome, ${user.username || "User"}${user.premium ? " (Premium)" : ""}` 
-            : "🔑 Go to Login Page"}
-        </button>
-      </div>
+      <div className="user-card"  onClick={() => goToPage("/premium") }>
+
+  <div className="user-info">
+
+    <img src="/images/user.png" alt="user" className="user-icon" />
+
+    <div>
+
+      <span className="welcome-text">
+
+        Welcome, {user.username || "User"}
+
+      </span>
+
+      {user.username && user.premium && (
+
+        <span className="premium-badge">Premium ⭐</span>
+
+      )}
+
+    </div>
+
+  </div>
+
+  <button
+
+    className="user-btn"
+
+    onClick={() => goToPage("/premium")}
+
+  >
+
+    {!user.username
+
+      ? "Go to Login"
+
+      : !user.premium
+
+      ? "Go Buy Premium"
+
+      : "Go Premium ✅Page" }
+
+  </button>
+
+</div>
       
       <h2>Settings</h2>
 
@@ -174,4 +212,5 @@ useEffect(() => {
 }
 
 export default Settings;
+
 
