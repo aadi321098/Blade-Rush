@@ -1,4 +1,8 @@
-.legal-page {
+/* ================================
+   Privacy Page (Dark Theme like About)
+   ================================ */
+
+.privacy-page {
   padding: 20px;
   background: linear-gradient(135deg, #0a0f1f, #121d3b);
   min-height: 100vh;
@@ -6,14 +10,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-.page-title {
+.privacy-page h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
   animation: fadeIn 1.5s ease;
 }
 
-.page-title::after {
+.privacy-page h2::after {
   content: "";
   display: block;
   width: 80px;
@@ -23,7 +27,7 @@
   border-radius: 5px;
 }
 
-.legal-content {
+.privacy-content {
   background: rgba(255, 255, 255, 0.05);
   padding: 25px;
   border-radius: 15px;
@@ -32,65 +36,69 @@
 }
 
 /* List Styling */
-.legal-list {
+.privacy-list {
   margin-left: 20px;
   margin-bottom: 20px;
   list-style: decimal;
 }
 
-.legal-list li {
+.privacy-list li {
   margin-bottom: 18px;
   padding: 15px 18px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid #4dd0ff;
+  border-left: 4px solid #ffd369;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.legal-list li:hover {
+.privacy-list li:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(77, 208, 255, 0.4);
+  box-shadow: 0 6px 15px rgba(255, 200, 50, 0.4);
 }
 
-.legal-list li strong {
-  color: #4dd0ff;
+.privacy-list li strong {
+  color: #ffd369;
   font-weight: 600;
 }
 
-.legal-list ul {
+.privacy-list ul {
   margin-top: 10px;
   margin-left: 20px;
   list-style: "👉 ";
 }
 
-/* ⚠️ Note Box */
-.legal-note {
+/* ⚠️ Data & Security Note */
+.privacy-note {
   margin: 25px 0;
   padding: 18px;
   border-radius: 12px;
-  background: rgba(255, 77, 77, 0.1);
-  border-left: 5px solid #ff4d4d;
-  color: #ff9999;
+  background: rgba(255, 183, 77, 0.1);
+  border-left: 5px solid #ffb347;
+  color: #ffcc80;
   font-size: 0.95rem;
   animation: pulseNote 1.5s infinite alternate;
 }
 
+.privacy-note strong {
+  color: #ffb347;
+}
+
 /* Contact Section */
-.legal-contact {
+.privacy-contact {
   text-align: center;
   margin: 30px 0 15px;
   font-size: 1rem;
   color: #a3c9ff;
 }
 
-.legal-contact a {
+.privacy-contact a {
   color: #66ccff;
   text-decoration: none;
   position: relative;
   font-weight: bold;
 }
 
-.legal-contact a::after {
+.privacy-contact a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -103,12 +111,13 @@
   transition: transform 0.3s ease;
 }
 
-.legal-contact a:hover::after {
+.privacy-contact a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-/* Home Button */.return-home {
+/* Home Button */
+.return-home {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
@@ -137,12 +146,6 @@
   transform: scale(0.96);
 }
 
-
-.home-link:hover {
-  background: #444;
-  transform: translateX(-5px);
-}
-
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
@@ -155,21 +158,21 @@
 }
 
 @keyframes pulseNote {
-  from { box-shadow: 0 0 10px rgba(255, 77, 77, 0.3); }
-  to { box-shadow: 0 0 15px rgba(255, 77, 77, 0.6); }
+  from { box-shadow: 0 0 10px rgba(255, 179, 71, 0.3); }
+  to { box-shadow: 0 0 15px rgba(255, 179, 71, 0.6); }
 }
 
 /* Responsive */
 @media (max-width: 600px) {
-  .legal-page {
+  .privacy-page {
     padding: 15px;
   }
 
-  .legal-content {
+  .privacy-content {
     padding: 18px;
   }
 
-  .legal-list li {
+  .privacy-list li {
     padding: 12px 14px;
     font-size: 0.95rem;
   }

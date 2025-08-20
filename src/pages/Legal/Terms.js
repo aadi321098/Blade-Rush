@@ -6,42 +6,81 @@ function Terms() {
   return (
     <>
       <div className="legal-page">
-        <h2>Terms of Service</h2>
+        <h2 className="page-title">
+          📜 Terms of Service
+        </h2>
 
-        <p>
-          By accessing or playing <strong>Blade Rush</strong>, developed by <strong>Aditya Games</strong>, you agree to the following terms:
-        </p>
+        <div className="legal-content">
+          <p>
+            By accessing or playing <strong>Blade Rush</strong>, developed by <strong>Aditya Games</strong>, 
+            you agree to the following terms:
+          </p>
 
-        <ul>
-          <li>1. This game is provided for <strong>personal entertainment</strong> only. Commercial use is not permitted.</li>
+          <ol className="legal-list">
+            <li>
+              <strong>Personal Use Only:</strong>  
+              This game is provided for <em>personal entertainment</em> only.  
+              Commercial use, resale, or redistribution is strictly prohibited.
+            </li>
 
-          <li>2. You may <strong>not copy, modify, distribute, or resell</strong> any part of the game without written permission.</li>
+            <li>
+              <strong>No Unauthorized Modifications:</strong>  
+              You may <u>not copy, modify, distribute, or resell</u> any part of the game 
+              (including code, graphics, audio, or gameplay design) without written permission.
+            </li>
 
-          <li>3. All assets including code, graphics, audio, gameplay design, and UI are <strong>intellectual property</strong> of Aditya Games.</li>
+            <li>
+              <strong>Intellectual Property:</strong>  
+              All assets, including design, mechanics, and UI, are the 
+              <strong> intellectual property of Aditya Games</strong>.
+            </li>
 
-          <li>4. We strive to provide a bug-free experience, but we are <strong>not liable</strong> for data loss, performance issues, or crashes caused by your device, browser, or system errors.</li>
+            <li>
+              <strong>No Liability:</strong>  
+              While we strive to deliver a smooth experience, we are not liable for  
+              data loss, crashes, or performance issues caused by device/browser/system errors.
+            </li>
 
-          <li>5. Game settings and local scores are saved in your browser or device. Uninstalling or clearing storage will <strong>permanently erase</strong> your data.</li>
+            <li>
+              <strong>Local Data:</strong>  
+              Game settings, preferences, and local scores are stored on your device/browser.  
+              Clearing storage or uninstalling will permanently erase this data.
+            </li>
 
-          <li>6. <strong>Premium and Tournament Features (Coming Soon):</strong>
-            <ul>
-              <li>• Users may optionally authenticate via <strong>Pi Network</strong> to participate in online tournaments.</li>
-              <li>• Entry into tournaments may require a small Pi-based fee.</li>
-              <li>• Leaderboards and score tracking will only include premium, authenticated users.</li>
-              <li>• By joining a tournament, you agree to share your username and score publicly on the leaderboard.</li>
-            </ul>
-          </li>
+            <li>
+              <strong>Premium & Tournament Features:</strong>  
+              <ul>
+                <li>🎮 <strong>Login with Pi Network</strong> is required for tournaments and premium features.</li>
+                <li>💎 Premium users get access to <em>exclusive themes, score saving, and global leaderboards</em>.</li>
+                <li>🏆 Tournament entry may require a small <strong>Pi-based fee</strong>.</li>
+                <li>📊 By joining a tournament, you agree that your <strong>username & score</strong> may appear publicly on leaderboards.</li>
+                <li>🔄 Leaderboards reset automatically every <strong>week at 0 UTC</strong>.</li>
+              </ul>
+            </li>
 
-          <li>7. We reserve the right to update these terms at any time. Continuing to use the app means you accept the current terms.</li>
-        </ul>
+            <li>
+              <strong>Updates to Terms:</strong>  
+              We may update these terms from time to time.  
+              Continued use of Blade Rush means you accept the latest version.
+            </li>
+          </ol>
 
-        <p>
-          For questions, feedback, or support, contact us at{" "}
-          <a href="mailto:mail.adityagames@gmail.com">mail.adityagames@gmail.com</a>.
-        </p>
+          {/* ⚠️ Important Legal Note */}
+          <div className="legal-note">
+            ⚠️ <strong>Important Note:</strong>  
+            All payments and authentication are processed securely through the official <strong>Pi Network SDK</strong>.  
+            Blade Rush never accesses your wallet’s private keys or sensitive financial data.
+          </div>
 
-        <div className="return-home">
-          <Link to="/" className="home-link">← Return to Home</Link>
+          <p className="legal-contact">
+            For questions, feedback, or support, contact us at:  
+            <br />
+            📧 <a href="mailto:mail.adityagames@gmail.com">mail.adityagames@gmail.com</a>
+          </p>
+
+          <div className="return-home">
+            <Link to="/" className="home-link">← Return to Home</Link>
+          </div>
         </div>
       </div>
 
