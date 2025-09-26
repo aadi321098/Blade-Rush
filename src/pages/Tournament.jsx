@@ -142,6 +142,18 @@ const Tournament = () => {
 
   return (
     <div className="tournament-page">
+      <div className="glass" style={{ textAlign: 'center', padding: '1em', marginBottom: '1em' }}>
+        <p>
+          <b>
+            Tournament not started yet. Help us donate by purchasing Premium.
+            <br />
+            If you mistaken buy premium and want refund then message me on Connect Pi:{' '}
+            <a href="https://connect-pi-roan.vercel.app/profile/adi321098" target="_blank" rel="noopener noreferrer">
+              https://connect-pi-roan.vercel.app/profile/adi321098
+            </a>
+          </b>
+        </p>
+      </div>
       {/* Top bar */}
       <div className="topbar">
         <div className="left">
